@@ -13,9 +13,16 @@
     <div class="nhsuk-grid-row">
       <div class="nhsai-resource__meta nhsuk-grid-column-two-thirds">
         <h1 class="nhsuk-heading-xl">{{ page.title }}</h1>
-	{% for pub in page.get_children %}
-	Full guidance: <a href="{{pub.url}}">{{pub.title}}</a>
-	{% endfor %}}
+
+        <nav class="nhsuk-contents-list" role="navigation" aria-label="Publications in this section">
+          <h2 class="nhsuk-heading-s">Full guidance:</h2>  
+          <ul class="nhsuk-contents-list__list">
+            {% for pub in page.get_children %}
+            <li class="nhsuk-contents-list__item"><a class="nhsuk-contents-list__link" href="{{pub.url}}">{{pub.title}}</a></li>
+            {% endfor %}
+          </ul>
+        </nav>
+	
         <time class="time"
           datetime="{{page.first_published_at|date:"c"}}">{{page.first_published_at|date:"j F Y"}}</time>
 
