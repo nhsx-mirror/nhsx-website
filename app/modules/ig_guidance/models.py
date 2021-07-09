@@ -142,7 +142,10 @@ class GuidanceListingPage(RoutablePageMixin, BasePage):
             ids = []
             for klass in self.subpage_types:
                 for obj in (
-                    eval(klass).objects.child_of(self).filter(tags__slug__in=[tag])
+                    eval(klass)
+                    .objects.child_of(self)
+                    .filter(tags__slug__in=[tag])
+                    .live()
                 ):
                     ids.append(obj.id)
             guidance = Page.objects.filter(id__in=(ids)).specific()
