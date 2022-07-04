@@ -168,7 +168,7 @@ crt = ["awscrt (==0.12.5)"]
 
 [[package]]
 name = "bugsnag"
-version = "4.1.1"
+version = "4.2.1"
 description = "Automatic error monitoring for django, flask, etc."
 category = "main"
 optional = false
@@ -1604,7 +1604,7 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytes
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.6"
-content-hash = "306d4b350e1eb4c49c5c039851cf570ce7ce981d7054bfe55211d769e828decc"
+content-hash = "e113a3312aae4fb2ab257c14fb98c888b95322dcfa88ee34206e95dcc934210f"
 
 [metadata.files]
 aiocontextvars = [
@@ -1664,8 +1664,8 @@ botocore = [
     {file = "botocore-1.22.11.tar.gz", hash = "sha256:306f5db93f53012a02e6d6616a76f05900746608899395a427d8edef9916effc"},
 ]
 bugsnag = [
-    {file = "bugsnag-4.1.1-py3-none-any.whl", hash = "sha256:03a3c39549fa248842a53b6d195fa3d64f5906aff4e2eeba98aadd033e1da968"},
-    {file = "bugsnag-4.1.1.tar.gz", hash = "sha256:cdbdb3e02ef0c0655bb55be8b05ec1cb830b5ec629923ccb24bfd71dede3d1c3"},
+    {file = "bugsnag-4.2.1-py3-none-any.whl", hash = "sha256:7bd4fb4cd20a1babcd0164c37f3dc248776c37c2e11b531dbb535684428386d7"},
+    {file = "bugsnag-4.2.1.tar.gz", hash = "sha256:3d3e9768acf7405004842992ee35ca2bbc71b1c365a5b846a42290211b92b7a5"},
 ]
 certifi = [
     {file = "certifi-2021.10.8-py2.py3-none-any.whl", hash = "sha256:d62a0163eb4c2344ac042ab2bdf75399a71a2d8c7d47eac2e2ee91b9d6339569"},
